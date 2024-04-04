@@ -1,15 +1,21 @@
-const amount = document.getElementById("amount");
-const percentage = document.getElementById("percentage");
-const calculateBtn = document.getElementById("calculate");
+const form = document.getElementById("form");
+const birthday = document.getElementById("birthday");
+// const calculateBtn = document.getElementById("calculate");
 const result = document.getElementById("total");
 
 // function to calculate tip
-function calculateTip() {
-    const newAmount = amount.value;
-    const newPercentage = percentage.value;
-    const resultDisplay = newAmount * (1 + newPercentage/100);
-    console.log(resultDisplay, "display result")
+function calculateAge(e) {
+    e.preventDefault();
+
+    // enter a date
+    let dob = new Date(birthday.value).getFullYear();
+
+    // get current date
+    let today = new Date().getFullYear();
+
+    let resultDisplay = today - dob;
+
     result.innerText = `${resultDisplay}`;
 }
 
-calculateBtn.addEventListener("click", calculateTip);
+form.addEventListener("submit", calculateAge);

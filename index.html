@@ -9,24 +9,18 @@
 <body>
 
     <div class="main-box">
-        <h1>Tip Calculator</h1>
+        <h1>Age Calculator</h1>
         <div class="calculate-box">
-            <p>Enter the bill amount and tip percentage to calculate the total.</p>
-            <!-- <form id="form"> -->
+            <p><b>Enter your Date of Birth:</b></p>
+            <form id="form">
                 <div>
-                    <p>Bill amount:</p>
-                    <input type="text" id="amount">
+                    <input type="date" id="birthday" name="birthday">
                 </div>
-                <div>
-                    <p>Tip percentage:</p>
-                    <input type="text" id="percentage">
-                </div>
-                <button id="calculate">CALCULATE</button>
+                <input type="submit" id="calculate" class="calculate">CALCULATE AGE</button>
                 <div class="total-result">
-                    <p>Total:</p>
-                    <h3 id="total" ></h3>
+                    <p>Your age is <span id="total"></span> years old</p>
                 </div>
-            <!-- </form> -->
+            </form>
         </div>        
     </div>
     

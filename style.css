@@ -58,10 +58,10 @@ input {
     padding: 0.5em;
     border-radius: 4px;
     border: 1px solid #ccc;
-    width: 96%;
+    width: 100%;
 }
 
-button {
+.calculate {
     padding: 0.5em;
     font-weight: bold;
     background: var(--color-green);
@@ -69,11 +69,15 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
-    border: 1px solid #000;
 }
 
 .total-result {
     display: flex;
     align-items: center;
     gap: 0.5em;
+}
+
+.total-result p {
+    font-size: 1.5em;
+    font-weight: 500;
 }
