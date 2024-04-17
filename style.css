@@ -28,7 +28,7 @@ body {
 .main-box {
     box-shadow: 1px 2px var(--color-gray);
     background: var(--color-white);
-    width: 30em;
+    min-width: 30em;
     padding: 2em 0;
     display: flex;
     align-items: center;
