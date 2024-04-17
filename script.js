@@ -1,6 +1,5 @@
 const form = document.getElementById("form");
 const birthday = document.getElementById("birthday");
-// const calculateBtn = document.getElementById("calculate");
 const result = document.getElementById("total");
 
 // function to calculate tip
